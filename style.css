@@ -1,0 +1,110 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    background-image:url('images/pattern-background-desktop.svg') ;
+    background-repeat:no-repeat;
+    background-color: hsla(245, 75%, 52%, 0.103);
+}
+.content{
+    border-radius:15px;
+    width:450px;
+    height:auto;
+    background-color: white;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    margin:15% auto 0;
+    box-shadow: 0 0 5px 5px hsl(225, 100%, 94%);
+    color: hsl(224, 23%, 55%);
+}
+#image-source{
+    border-radius: 15px 15px 0 0;
+    width:450px;
+    height:auto;
+}
+.text-info{
+    text-align:center;
+    padding: 10px 40px;
+    width:100%;
+}
+#price-des{
+    background-color:hsl(225, 100%, 98%);
+    text-align:center;
+    padding-top:15px;
+    padding-bottom:15px;
+    display:grid;
+    column-gap:5px;
+    grid-template-columns: auto auto auto;
+    border-radius: 7px;
+    align-items: center;
+}
+#muic{
+    border-radius: 50%;
+}
+#mid{
+    text-align: left;
+}
+h1,#anpn{
+    font-weight: 700;
+    color:hsl(223, 47%, 23%);
+}
+#change{
+    text-decoration: underline hsl(245, 75%, 52%);
+    color:hsl(245, 75%, 52%);
+    font-weight: 900;
+}
+.text-info p, #price-des,#btn1{
+    margin-top:40px;
+}
+p{
+    padding: 0 10px;
+}
+#btn1{
+    width:100%;
+    padding:10px 75px;
+    border-radius: 7px;
+    background-color: hsl(245, 75%, 52%);
+    color:white;
+    border:none;
+    font-size:17px;
+    font-weight: 700;
+}
+#cancellation-link{
+    font-weight:700;
+}
+@media (min-width:721px){
+    #change:hover, #btn1:hover,#cancellation-link:hover{
+        cursor: pointer;
+    }
+    #change:hover{
+        color:hsl(224, 23%, 55%);
+        text-decoration: none;
+    }
+    #btn1:hover{
+        background-color: hsl(224, 23%, 55%);
+    }
+    #cancellation-link:hover{
+        color:hsl(223, 47%, 23%);
+    }
+}
+@media (max-width:720px){
+    body{
+        margin-left:12px;
+        margin-right:12px;
+    }
+    .content{
+        width:100%;
+    }
+    #image-source{
+        width:100%;
+        height:auto;
+    }
+    .text-info{
+        padding:25px;
+    }
+    #btn1{
+        padding-left:30px;
+        padding-right:30px;
+    }
+}
